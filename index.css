@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #0d0e0e;
+}
+.nav-link{
+    color: white !important;
+    margin-right: 1rem;
+}
+.nav-link:hover{
+    color: #ffff00 !important;
+}
+/* Code to open auto navbar items */
+.dropdown:hover .dropdown-menu{
+    display: block;
+    background-color: #0d0e0e;
+}
+.dropdown-menu{
+    margin-top: 0;
+}
+.dropdown-item{
+    color: white !important;
+}
+.dropdown-item:hover{
+    background-color: rgba(255, 255, 255, 0.176) !important;
+}
+.btn-outline{
+    border: .1rem solid #0bc4f2 !important;
+    color: #0bc4f2 !important;
+}
+.btn-outline:hover{
+    background-color: white;
+    color: #0bc4f2 !important;
+}
+
+/* Home slider code */
+.carousel-caption h1{
+   font-family: 'Open Sans', sans-serif;
+   color: #ffff00;
+   letter-spacing: -0.25rem;
+   font-size: 5rem;
+   line-height: 5.2rem; 
+   
+}
+.carousel-caption h3,p{
+    color: white;
+}
+.carousel-caption{
+    text-align: left !important;
+}
+.home-btn{
+    border: .1rem solid #ffff00 !important;
+    color: #ffff00 !important;
+    padding: 1rem !important; 
+    width: 10rem;  
+
+}
+.home-btn:hover{
+    background-color: #ffff00;
+    color: black !important;
+}
