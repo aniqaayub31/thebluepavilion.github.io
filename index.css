@@ -39,11 +39,14 @@
 /* Home slider code */
 .carousel-caption h1{
    font-family: 'Open Sans', sans-serif;
-   color: #ffff00;
+   color: white;
    letter-spacing: -0.25rem;
    font-size: 5rem;
-   line-height: 5.2rem; 
-   
+   line-height: 5.2rem;
+   text-shadow: none;
+   animation-name: headingOne; 
+   animation-duration:3s;
+   animation-iteration-count: 1;
 }
 .carousel-caption h3,p{
     color: white;
@@ -61,4 +64,18 @@
 .home-btn:hover{
     background-color: #ffff00;
     color: black !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #ffff00 !important;
+    border-radius: 50%;
+    color: white !important;
+}
+@keyframes headingOne{
+    from{
+        color: white;
+
+    }to{
+        color: #ffff00;
+        text-shadow: .1rem .1rem .2rem white;
+    }
 }
