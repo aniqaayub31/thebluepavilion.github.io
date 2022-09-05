@@ -1,10 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 .navbar{
     background-color: #0d0e0e;
+    position: absolute;
+    top: 0;
 }
 .nav-link{
     color: white !important;
@@ -51,6 +53,9 @@
 .carousel-caption h3,p{
     color: white;
 }
+.carousel-caption p{
+   width: 35rem;
+}
 .carousel-caption{
     text-align: left !important;
 }
@@ -58,11 +63,12 @@
     border: .1rem solid #ffff00 !important;
     color: #ffff00 !important;
     padding: 1rem !important; 
-    width: 10rem;  
+    width: 10rem;
+    background-color: #0d0e0eab !important;  
 
 }
 .home-btn:hover{
-    background-color: #ffff00;
+    background-color: #ffff00 !important;
     color: black !important;
 }
 .carousel-control-next-icon, .carousel-control-prev-icon{
@@ -70,6 +76,77 @@
     border-radius: 50%;
     color: white !important;
 }
+/* About section/ landing page */
+.about{
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 3rem;
+    
+}
+.about .card{
+    background-color: white;
+    width: 70vw;
+    margin: auto;
+    border: transparent;
+    box-shadow: .1rem .1rem .8rem #0bc4f272; 
+    padding: 2rem; 
+}
+.about .card h1{
+    font-family: 'Open Sans', sans-serif;
+    color: #0bc4f2;
+}
+.about .card .card-body p{
+    color: black !important;
+    text-align: justify;
+}
+.about .card .card-body .btn{
+    color: #0bc4f2;
+}
+.about .card .card-body .btn:hover{
+    background-color: #0bc4f2;
+    color: black;
+}
+
+/* service section/landing page */
+.services{
+    width: 100vw;
+    background-color: #0bc4f208;
+    padding: 3rem;
+    text-align: center;
+}
+.services p{
+    color: black;
+}
+.services .card{
+    border: transparent;
+    box-shadow: 3px 3px 6px #0bc4f25a;
+}
+.services .card img{
+    width: 6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.services .card{
+    padding-top:1rem;
+}
+.services .card:hover{
+    border-left: 2px solid #0bc4f2;
+    box-shadow: 6px 6px 10px #0bc4f275;
+}
+.services .card .card-body .btn{
+    color: #0bc4f2;
+}
+.container .slide img{
+    width: 5rem;
+}
+
+
+
+
 @keyframes headingOne{
     from{
         color: white;
@@ -77,5 +154,113 @@
     }to{
         color: #ffff00;
         text-shadow: .1rem .1rem .2rem white;
+    }
+}
+
+
+
+
+/* 2340x1080 pixels at 476ppi */ 
+@media only screen
+and (device-width: 360px) 
+and (device-height: 780px) 
+and (-webkit-device-pixel-ratio: 3) { 
+    html{
+        background-size: 100%;
+    }
+}
+
+/* ----------- iPhone 12, 12 Pro ----------- */
+
+/* 2532x1170 pixels at 460ppi */ 
+@media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) { }
+
+/* ----------- iPhone 12, 12 Pro ----------- */
+ 
+/* 2532x1170 pixels at 460ppi */ 
+@media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) { }
+
+/* ----------- iPhone 11 ----------- */
+/* 1792x828px at 326ppi */ 
+@media only screen 
+and (device-width: 414px) 
+and (device-height: 896px) 
+and (-webkit-device-pixel-ratio: 2) { }
+
+/* ----------- iPhone 11 ----------- */
+/* 1792x828px at 326ppi */ 
+@media only screen 
+and (device-width: 414px) 
+and (device-height: 896px) 
+and (-webkit-device-pixel-ratio: 2) { }
+
+/* ----------- OnePlus 6 ----------- */
+@media only screen
+and (min-width: 412px) 
+and (max-width: 869px) {}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    html{
+        background-size: 100%;
+    }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+    html{
+        font-size: 100%;
+    }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+    
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    
+}
+ 
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+    
+}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+    html{
+        background-size: 100%;
+    }
+}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+    html{
+        background-size: 100%;
+    }
+}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    html{
+        background-size: 100%;
     }
 }
