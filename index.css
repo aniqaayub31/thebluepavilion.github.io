@@ -140,8 +140,35 @@
 .services .card .card-body .btn{
     color: #0bc4f2;
 }
+
+/* Our Expertise Section Slick Slider */
+#slick-slider-container{
+    padding: 2rem;
+    text-align: center;
+}
+.container h1{
+    margin-bottom: 2rem;
+}
 .container .slide img{
-    width: 5rem;
+    width: 10rem;
+}
+/* our client section */
+.client-section{
+    width: 100vw;
+    background-image: url(media/happyclient1.jpeg), linear-gradient(#0bc4f2,#ffff00 );
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    padding: 5rem;
+    text-align: center;
+    color: white;
+}
+.client-section .container h1{
+    font-size: 5rem;
+}
+.client-section .container{
+    margin-top: 3rem;
 }
 
 
