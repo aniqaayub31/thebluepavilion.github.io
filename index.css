@@ -50,6 +50,15 @@
    animation-duration:3s;
    animation-iteration-count: 1;
 }
+@keyframes headingOne{
+    from{
+        color: white;
+
+    }to{
+        color: #ffff00;
+        text-shadow: .1rem .1rem .2rem white;
+    }
+}
 .carousel-caption h3,p{
     color: white;
 }
@@ -110,6 +119,26 @@
     color: black;
 }
 
+/* ceo message section */
+.ceo-message{
+    background-image: url(media/ceo.jpg), linear-gradient(#0bc4f2,#ffff00 );
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-attachment: fixed;
+}
+.ceo-message h1{
+   font-family: 'Open Sans', sans-serif;
+   color: white;
+   letter-spacing: -0.25rem;
+   font-size: 5rem;
+   line-height: 5.2rem;
+}
+
+
 /* service section/landing page */
 .services{
     width: 100vw;
@@ -123,6 +152,7 @@
 .services .card{
     border: transparent;
     box-shadow: 3px 3px 6px #0bc4f25a;
+    transition: 0.5s;
 }
 .services .card img{
     width: 6rem;
@@ -136,6 +166,8 @@
 .services .card:hover{
     border-left: 2px solid #0bc4f2;
     box-shadow: 6px 6px 10px #0bc4f275;
+    transform: scale(1.1);
+    z-index: 10000;
 }
 .services .card .card-body .btn{
     color: #0bc4f2;
@@ -163,26 +195,138 @@
     padding: 5rem;
     text-align: center;
     color: white;
+    background-attachment: fixed;
 }
 .client-section .container h1{
     font-size: 5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    letter-spacing: -0.25rem;
+    font-size: 5rem;
+    line-height: 5.2rem;
+
 }
 .client-section .container{
     margin-top: 3rem;
 }
-
-
-
-
-@keyframes headingOne{
-    from{
-        color: white;
-
-    }to{
-        color: #ffff00;
-        text-shadow: .1rem .1rem .2rem white;
-    }
+/* testimonials styling code */
+.wrapper{
+    background-color: #0bc4f208;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 3rem;
 }
+.wrapper h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+.wrapper h5{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;   
+}
+.card1{
+    width: 380px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 7px;
+    padding: 20px 30px;
+    position: relative;
+    background-color: white;
+    box-shadow: 3px 3px 6px #0bc4f25a;
+    transition: 0.5s;
+}
+.card1 img{
+    height: 90px;
+    width: 90px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+.card1 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: rgba(0, 0, 0, 0.811);
+    font-weight: lighter !important;
+}
+.card1 h2{
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.card1 h4{
+    color: #333;
+    font-weight: 200;
+    font-size: 16px;
+}
+.card1 i{
+    font-size: 60px;
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    color: #0bc4f2;
+}
+.card1:hover{
+    transform: scale(1.4);
+    color:#333;
+    background: #ffff00;
+    z-index: 10000;
+}
+.wrapper .btn{
+    color: #0bc4f2;
+    margin-top: 3rem;
+    display: block;
+}
+/* our values section/landing page */
+.our-values{
+    width: 100vw;
+    background-color: #0bc4f2;
+    padding: 3rem;
+    text-align: center;
+    color: #ffff00;
+}
+.our-values .card{
+    border: transparent;
+    box-shadow: 3px 3px 6px #f5f7f8a8;
+    transition: 0.5s;
+    background-color: transparent;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+.our-values .card{
+    padding-top:1rem;
+}
+.our-values .card:hover{
+    background-color: #ffff00;
+    transform: scale(1.1);
+    z-index: 10000;
+    color: #0bc4f2;
+}
+
+
+
+
+
 
 
 

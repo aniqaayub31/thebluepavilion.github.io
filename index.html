@@ -1,335 +1,473 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    
-    <!-- Bootstrap CSS -->
-    <link href="index.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Google fonts cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
-    <!-- favicon file -->
-    <link rel="icon" type="image/x-icon" href="media/favicon.png">
-    <title>Home-TBP</title>
-  </head>
-  <body>
-     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="media/logo.png" style="height: 3rem;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- fa fa icons cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="index.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Google fonts cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+  <!-- favicon file -->
+  <link rel="icon" type="image/x-icon" href="media/favicon.png">
+  <title>Home-TBP</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="media/logo.png" style="height: 3rem;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Real Estate Advisory</a></li>
+              <li><a class="dropdown-item" href="#">Book Keeping</a></li>
+              <li><a class="dropdown-item" href="#">Accounting</a></li>
+              <li><a class="dropdown-item" href="#">Business handling</a></li>
+              <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+              <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
+              <li><a class="dropdown-item" href="#">Web Designing</a></li>
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li><a class="dropdown-item" href="#">Social Media</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Real Estate Advisory</a></li>
-                  <li><a class="dropdown-item" href="#">Book Keeping</a></li>
-                  <li><a class="dropdown-item" href="#">Accounting</a></li>
-                  <li><a class="dropdown-item" href="#">Business handling</a></li>
-                  <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
-                  <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
-                  <li><a class="dropdown-item" href="#">Web Designing</a></li>
-                  <li><a class="dropdown-item" href="#">Web Development</a></li>
-                  <li><a class="dropdown-item" href="#">Social Media</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Upcomings</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Products
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Home Decor</a></li>
-                  <li><a class="dropdown-item" href="#">Curtains & Carpets</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Leadership
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Our Leadership</a></li>
-                  <li><a class="dropdown-item" href="#">Our Values</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Media
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
-                  <li><a class="dropdown-item" href="#">Our Clients</a></li>
-                  <li><a class="dropdown-item" href="#">Company Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Our Team</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Upcomings</a></li>
             </ul>
-            <form class="d-flex">
-              <button class="btn btn-outline" type="submit">Free Consultancy</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    <!-- home page slider! -->
-    <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="media/wDesign-05.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption">
-              <h3>Do you want</h3>
-              <h1>Business<br>Growth?</h1>
-              <p>We are a marketing companion to help you in your Business growth.We know how to manifest your brand product with new marketing ideas or business plans. </p>
-              <button class="btn home-btn" type="submit">Work With Us</button>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="media/wDesign-04.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption">
-              <h3>We're Providing an amazing</h3>
-              <h1>Graphics<br>Design</h1>
-              <p>Design is always the first moderator of your brand.  So that's why we always design attractive, effective, and chromatic visuals because We know how to push more traffic to lead to more opportunities.</p>
-              <button class="btn home-btn" type="submit">Work With Us</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="media/wDesign-06.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption">
-              <h3>we're providing</h3>
-              <h1>Application<br>Development</h1>
-              <p>We design, build, implement and support your software applications. We work on web applications and mobile application development with high accessibility, security, and extra efficiency.</p>
-              <button class="btn home-btn" type="submit">Work With Us</button>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Home Decor</a></li>
+              <li><a class="dropdown-item" href="#">Curtains & Carpets</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Leadership
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Our Leadership</a></li>
+              <li><a class="dropdown-item" href="#">Our Values</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Media
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Testimonials</a></li>
+              <li><a class="dropdown-item" href="#">Our Clients</a></li>
+              <li><a class="dropdown-item" href="#">Company Profile</a></li>
+              <li><a class="dropdown-item" href="#">Our Team</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline" type="submit">Free Consultancy</button>
+        </form>
       </div>
-      <!-- About Section -->
-      <div class="about">
-        <div class="card">
+    </div>
+  </nav>
+  <!-- home page slider! -->
+  <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="media/wDesign-05.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h3>Do you want</h3>
+          <h1>Business<br>Growth?</h1>
+          <p>We are a marketing companion to help you in your Business growth.We know how to manifest your brand product
+            with new marketing ideas or business plans. </p>
+          <button class="btn home-btn" type="submit">Work With Us</button>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="media/wDesign-04.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h3>We're Providing an amazing</h3>
+          <h1>Graphics<br>Design</h1>
+          <p>Design is always the first moderator of your brand. So that's why we always design attractive, effective,
+            and chromatic visuals because We know how to push more traffic to lead to more opportunities.</p>
+          <button class="btn home-btn" type="submit">Work With Us</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/wDesign-06.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h3>we're providing</h3>
+          <h1>Application<br>Development</h1>
+          <p>We design, build, implement and support your software applications. We work on web applications and mobile
+            application development with high accessibility, security, and extra efficiency.</p>
+          <button class="btn home-btn" type="submit">Work With Us</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- About Section -->
+  <div class="about">
+    <div class="card">
+      <div class="card-body">
+        <h6>Welcome</h6>
+        <h1>To The Tribe Of Professionals</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at semper leo. Fusce sed nunc ac metus
+          fermentum semper. Vestibulum ut condimentum mi, sed scelerisque ante. Maecenas sagittis turpis non lacus
+          tempor facilisis. Maecenas tincidunt egestas dui, sit amet laoreet erat finibus ut. Class aptent taciti
+          sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla dictum nisl vitae magna euismod
+          iaculis. Sed nec nulla tempor, auctor nulla et, scelerisque urna.</p>
+        <a href="#" class="btn">Meet Our Professionals<span>&#8594;</span></a>
+      </div>
+    </div>
+  </div>
+  <!-- CEO Message Section -->
+  <div class="ceo-message">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4>Meet Our CEO and Founder</h4>
+          <h1>Muhammad Bilal Khan</h1>
+          <p><span class="fa fa-quote-left"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at semper leo. Fusce sed nunc ac metus
+            fermentum semper. Vestibulum ut condimentum mi, sed scelerisque ante. <span class="fa fa-quote-right"></span></p>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Services Section -->
+  <div class="services">
+    <h1>Services</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at semper leo. Fusce sed nunc ac metus fermentum
+      semper.</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="media/services-01.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h6>Welcome</h6>
-            <h1>To The Tribe Of Professionals</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at semper leo. Fusce sed nunc ac metus fermentum semper. Vestibulum ut condimentum mi, sed scelerisque ante. Maecenas sagittis turpis non lacus tempor facilisis. Maecenas tincidunt egestas dui, sit amet laoreet erat finibus ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla dictum nisl vitae magna euismod iaculis. Sed nec nulla tempor, auctor nulla et, scelerisque urna.</p>
-            <a href="#" class="btn">Meet Our Professionals<span>&#8594;</span></a>
+            <h5 class="card-title">Web Development</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              is a little bit longer.</p>
+            <a href="#" class="btn">Read More<span>&#8594;</span></a>
           </div>
         </div>
       </div>
-      <!-- Services Section -->
-      <div class="services">
-        <h1>Services</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at semper leo. Fusce sed nunc ac metus fermentum semper.</p>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="media/services-01.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Web Development</h5>
-                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                 <a href="#" class="btn">Read More<span>&#8594;</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="media/services-02.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Quality Assurance</h5>
-                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                 <a href="#" class="btn">Read More<span>&#8594;</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="media/services-03.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">UI/UX Designing</h5>
-                <p>This is a short card.</p>
-                <a href="#" class="btn">Read More<span>&#8594;</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="media/services-04.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Graphics Designing</h5>
-                <p>This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                 <a href="#" class="btn">Read More<span>&#8594;</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="media/services-05.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Digital Marketing</h5>
-                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                 <a href="#" class="btn">Read More<span>&#8594;</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="media/services-06.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Social Media</h5>
-                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                 <a href="#" class="btn">Read More<span>&#8594;</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="media/services-07.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Business Handling</h5>
-                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                 <a href="#" class="btn">Read More<span>&#8594;</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="media/services-08.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Book Keeping</h5>
-                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                 <a href="#" class="btn">Read More<span>&#8594;</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="media/services-09.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Real Estate Advisory</h5>
-                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                 <a href="#" class="btn">Read More<span>&#8594;</span></a>
-              </div>
-            </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="media/services-02.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Quality Assurance</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              is a little bit longer.</p>
+            <a href="#" class="btn">Read More<span>&#8594;</span></a>
           </div>
         </div>
       </div>
-      <!-- Expertise section slick slider -->
-      <div class="container" id="slick-slider-container">
-        <h1>Our Expertise</h1>
-        <div class="expertise-logos slider">
-          <div class="slide">
-            <img src="media/expertise-01.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-02.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-03.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-04.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-05.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-06.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-07.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-08.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-09.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-10.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-11.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-12.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-13.png">
-          </div>
-          <div class="slide">
-            <img src="media/expertise-14.png">
+      <div class="col">
+        <div class="card h-100">
+          <img src="media/services-03.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">UI/UX Designing</h5>
+            <p>This is a short card.</p>
+            <a href="#" class="btn">Read More<span>&#8594;</span></a>
           </div>
         </div>
       </div>
-      <!-- happy client section -->
-      <div class="client-section">
-        <h1>100<sup>+</sup>Clients Project</h1>
-        <h4>Completion With High Gratification</h4>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1>100<sup>+</sup><br>Clients</h1>
-            </div>
-            <div class="col">
-              <h1>1000<sup>+</sup><br>Projects</h1>
-            </div>
-            <div class="col">
-              <h1>500<sup>+</sup><br>Meetings</h1>
-            </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="media/services-04.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Graphics Designing</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn">Read More<span>&#8594;</span></a>
           </div>
         </div>
       </div>
-  
+      <div class="col">
+        <div class="card h-100">
+          <img src="media/services-05.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Digital Marketing</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              is a little bit longer.</p>
+            <a href="#" class="btn">Read More<span>&#8594;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="media/services-06.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Social Media</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              is a little bit longer.</p>
+            <a href="#" class="btn">Read More<span>&#8594;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="media/services-07.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Business Handling</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              is a little bit longer.</p>
+            <a href="#" class="btn">Read More<span>&#8594;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="media/services-08.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Book Keeping</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              is a little bit longer.</p>
+            <a href="#" class="btn">Read More<span>&#8594;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="media/services-09.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Real Estate Advisory</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              is a little bit longer.</p>
+            <a href="#" class="btn">Read More<span>&#8594;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Expertise section slick slider -->
+  <div class="container" id="slick-slider-container">
+    <h1>Our Expertise</h1>
+    <div class="expertise-logos slider">
+      <div class="slide">
+        <img src="media/expertise-01.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-02.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-03.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-04.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-05.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-06.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-07.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-08.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-09.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-10.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-11.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-12.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-13.png">
+      </div>
+      <div class="slide">
+        <img src="media/expertise-14.png">
+      </div>
+    </div>
+  </div>
+  <!-- happy client section -->
+  <div class="client-section">
+    <h1>100<sup>+</sup>Clients Project</h1>
+    <h4>Completion With High Gratification</h4>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>100<sup>+</sup><br>Clients</h1>
+        </div>
+        <div class="col">
+          <h1>1000<sup>+</sup><br>Projects</h1>
+        </div>
+        <div class="col">
+          <h1>500<sup>+</sup><br>Meetings</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonials section -->
+  <div class="wrapper">
+    <h1>Our Happy Clients</h1>
+    <h5>Our happy Clients Reviews</h5>
+    <!-- review cards -->
+    <div class="cards">
+      <div class="card1">
+        <img src="media/client1.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at semper leo. Fusce sed nunc ac metus
+          fermentum semper.</p>
+        <h2>John Smith</h2>
+        <h4>Finance Advisor</h4>
+        <i class="fa fa-quote-left"></i>
+      </div>
+      <div class="card1">
+        <img src="media/client1.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at semper leo. Fusce sed nunc ac metus
+          fermentum semper.</p>
+        <h2>John Smith</h2>
+        <h4>Finance Advisor</h4>
+        <i class="fa fa-quote-left"></i>
+      </div>
+      <div class="card1">
+        <img src="media/client1.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at semper leo. Fusce sed nunc ac metus
+          fermentum semper.</p>
+        <h2>John Smith</h2>
+        <h4>Finance Advisor</h4>
+        <i class="fa fa-quote-left"></i>
+      </div>
+    </div>
+    <a href="#" class="btn">View More<span>&#8594;</span></a>
+  </div>
+  <!-- Our Values Section -->
+  <div class="our-values">
+    <h1>Our Values</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Quality Assurance</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">UI/UX Designing</h5>
+            <p>This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Graphics Designing</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Digital Marketing</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Social Media</h5>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-      <!-- javascript custom file link -->
-      <script type="text/javascript" src="main.js"></script>
-    
-  </body>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- javascript custom file link -->
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+
 </html>
