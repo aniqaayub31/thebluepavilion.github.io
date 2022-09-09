@@ -34,6 +34,13 @@ $(".expertise-logos").slick({
         }
       },
       {
+        breakpoint: 280,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
@@ -86,5 +93,18 @@ $(".expertise-logos").slick({
     ]
   });
 });
+// Solid to transparent navbar on scroll
+$(document).ready(function(){
+  $(window).scroll(function(){
+      if($(window).scrollTop() > $(window).height()){
+          $(".navbar").css({"background-color":"rgba(0, 0, 0, 0.549)"});   
+      }
+      else{
+          $(".navbar").css({"background-color":"#0d0e0e"});
+      }
+
+  });
+});
+
 
 
