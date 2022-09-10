@@ -42,9 +42,16 @@
 
 /* Home slider code */
 .carousel{
+    width: 100vw;
+    height: 90vh;
     display: grid;
     align-items: center;
-    align-content: center;   
+    align-content: center;
+    background-color: #0d0e0e;
+}
+.carousel-item img{
+    width: 100vw;
+    height: 90vh;
 }
 .carousel-caption h1{
    font-family: 'Open Sans', sans-serif;
@@ -603,6 +610,28 @@
    
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .carousel{
+        width: 100vw;
+        height: 90vh;
+        display: grid;
+        align-items: center;
+        align-content: center;
+        background-color: #0d0e0e;
+        padding-bottom: 15rem;  
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+      opacity: 0;
+    }
+    .carousel-item img{
+        opacity: 0;
+    }
+    .carousel-item h1{
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .carousel-item p{
+        width: 100%;
+    }
     #ceoName{
         letter-spacing: -0.25rem;
         font-size: 3rem;
@@ -629,7 +658,11 @@
         margin-top: 3rem;
     }
     .contact .container .row .col .q-chat {
-        padding: 1rem;
+        padding: .9rem;
+    }
+    .client-section{
+        background-image: url(https://1.bp.blogspot.com/-E9OLk_qV-K0/YUHbOD0J4nI/AAAAAAAABkg/14TtMwk_jxERs-fI0ZckfhG5-VK5RuYmwCLcBGAsYHQ/s1215/Excited-Indian-Girl-with-Phone-Transparent-Image.png?dl=1), linear-gradient(#0bc4f2,#ffff00 );
+        background-position: center;
     }
 }
 
