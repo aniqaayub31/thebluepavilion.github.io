@@ -8,6 +8,7 @@
     position: absolute;
     top: 0;
     z-index: 10000;
+    width: 100vw;
 }
 .nav-link{
     color: white !important;
@@ -137,12 +138,13 @@
     padding-bottom: 5rem;
     background-attachment: fixed;
 }
-.ceo-message h1{
+#ceoName{
    font-family: 'Open Sans', sans-serif;
    color: white;
    letter-spacing: -0.25rem;
    font-size: 5rem;
    line-height: 5.2rem;
+   text-align: left;
 }
 .signature{
     font-family: 'Sacramento', cursive;
@@ -158,6 +160,14 @@
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
+}
+.services h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 .services p{
     color: black;
@@ -193,6 +203,12 @@
 }
 .container h1{
     margin-bottom: 2rem;
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 1.875rem;
+    text-align: center;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 .container .slide img{
     width: 10rem;
@@ -227,59 +243,46 @@
     background-color: #0bc4f208;
     min-height: 100vh;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: 'Open Sans', sans-serif;
-    padding: 3rem;
+    width: 100vw;
 }
 .wrapper h1{
     font-size: 60px;
     font-weight: 500;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
     text-align: center;
     color: black;
 }
 .wrapper h5{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 300;
     text-align: center;
     margin-bottom: 80px;
 }
-.cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1200px;
-    margin: 0 auto;   
-}
 .card1{
-    width: 380px;
-    height: 250px;
-    border-radius: 15px;
-    margin: 7px;
-    padding: 20px 30px;
+    border-radius: 0.938rem;
+    margin: 0.438rem;
+    padding: 1.25rem 1.875rem;
     position: relative;
     background-color: white;
     box-shadow: 3px 3px 6px #0bc4f25a;
     transition: 0.5s;
 }
 .card1 img{
-    height: 90px;
-    width: 90px;
+    height: 5.625rem;
+    width: 5.625rem;
     border: 2px solid white;
     border-radius: 50%;
     position: absolute;
     top: -40px;
-    left: 20px;
+    left: 1.25rem;
 }
 .card1 p{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    margin-top: 40px;
-    margin-bottom: 25px;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.563rem;
     color: rgba(0, 0, 0, 0.811);
     font-weight: lighter !important;
 }
@@ -295,7 +298,7 @@
 .card1 i{
     font-size: 60px;
     position: absolute;
-    bottom: 20px;
+    bottom: 1.25rem;
     right: 25px;
     color: #0bc4f2;
 }
@@ -321,12 +324,19 @@
     text-align: center;
     color: #ffff00;
 }
+.our-values h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
 .our-values .card{
     border: transparent;
     box-shadow: 3px 3px 6px #05a0c7;
     transition: 0.5s;
     background-color: transparent;
-    border-radius: 15px;
+    border-radius: 0.938rem;
     margin-top: 2rem;
     padding-top:1rem;
 }
@@ -428,8 +438,8 @@
 .site-footer
 {
   background-color:black;
-  padding:45px 0 20px;
-  font-size:15px;
+  padding:45px 0 1.25rem;
+  font-size:0.938rem;
   line-height:24px;
   color:#737373;
 }
@@ -440,7 +450,7 @@
 }
 .site-footer hr.small
 {
-  margin:20px 0
+  margin:1.25rem 0
 }
 .site-footer h6
 {
@@ -503,7 +513,7 @@
 {
   .site-footer [class^=col-]
   {
-    margin-bottom:30px
+    margin-bottom:1.875rem
   }
 }
 @media (max-width:767px)
@@ -530,7 +540,7 @@
 }
 .social-icons li.title
 {
-  margin-right:15px;
+  margin-right:0.938rem;
   text-transform:uppercase;
   color:#96a2b2;
   font-weight:700;
@@ -590,114 +600,64 @@
 }
 
 
-
-
-
-
-
-
-
-/* 2340x1080 pixels at 476ppi */ 
-@media only screen
-and (device-width: 360px) 
-and (device-height: 780px) 
-and (-webkit-device-pixel-ratio: 3) { 
-    html{
-        background-size: 100%;
-    }
-}
-
-/* ----------- iPhone 12, 12 Pro ----------- */
-
-/* 2532x1170 pixels at 460ppi */ 
-@media only screen 
-and (device-width: 390px) 
-and (device-height: 844px) 
-and (-webkit-device-pixel-ratio: 3) { }
-
-/* ----------- iPhone 12, 12 Pro ----------- */
- 
-/* 2532x1170 pixels at 460ppi */ 
-@media only screen 
-and (device-width: 390px) 
-and (device-height: 844px) 
-and (-webkit-device-pixel-ratio: 3) { }
-
-/* ----------- iPhone 11 ----------- */
-/* 1792x828px at 326ppi */ 
-@media only screen 
-and (device-width: 414px) 
-and (device-height: 896px) 
-and (-webkit-device-pixel-ratio: 2) { }
-
-/* ----------- iPhone 11 ----------- */
-/* 1792x828px at 326ppi */ 
-@media only screen 
-and (device-width: 414px) 
-and (device-height: 896px) 
-and (-webkit-device-pixel-ratio: 2) { }
-
-/* ----------- OnePlus 6 ----------- */
-@media only screen
-and (min-width: 412px) 
-and (max-width: 869px) {}
-
-/* For extremely small screen devices (595px and below) */
-@media only screen and (max-width: 595px) {
-    html{
-        background-size: 100%;
-    }
-}
-
-/* Small screen devices (600px and above) */
-@media only screen and (min-width: 600px) {
-    html{
-        font-size: 100%;
-    }
-}
-
-/* Medium screen devices (768px and above) */
-@media only screen and (min-width: 768px) {
+   
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #ceoName{
+        letter-spacing: -0.25rem;
+        font-size: 3rem;
+        line-height: 3rem;
+     }
+     .signature{
+        font-size: 2rem;
+     }
+     .ceo-message h4{
+        font-size: 1rem;
+     }
+     .client-section{
+        text-align: center;
+        padding: 0;
+        padding-top: 1rem;
+     }
+     .client-section .container h1{
+        letter-spacing: -0.25rem;
+        font-size: 3rem;
+        line-height: 3rem;
     
-}
-
-/* Big screen devices (889px and above) */
-@media only screen and (min-width: 889px) {
-    
-}
-
-/* Extra big screen devices (1200px and above) */
-@media only screen and (min-width: 1200px) {
-    
-}
-
-/* For extremely small screen devices (595px and below) */
-@media only screen and (max-width: 595px) {
-    
-}
- 
-/* Small screen devices (600px and above) */
-@media only screen and (min-width: 600px) {
-    
-}
- 
-/* Medium screen devices (768px and above) */
-@media only screen and (min-width: 768px) {
-    html{
-        background-size: 100%;
+    }
+    .card1{
+        margin-top: 3rem;
+    }
+    .contact .container .row .col .q-chat {
+        padding: 1rem;
     }
 }
- 
-/* Big screen devices (889px and above) */
-@media only screen and (min-width: 889px) {
-    html{
-        background-size: 100%;
-    }
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
 }
- 
-/* Extra big screen devices (1200px and above) */
-@media only screen and (min-width: 1200px) {
-    html{
-        background-size: 100%;
-    }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
 }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+
+
+
+
+
