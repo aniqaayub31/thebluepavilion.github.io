@@ -261,11 +261,14 @@
     text-align: center;
     color: black;
 }
-.wrapper h5{
+#happy-Client{
     font-size: 1.25rem;
-    font-weight: 300;
+    margin: auto;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 80px;
+    color: black;
+    width: 70%;
 }
 .card1{
     border-radius: 0.938rem;
@@ -349,6 +352,8 @@
 }
 .our-values .card p{
     color: white;
+    text-align: justify;
+
 }
 .our-values .card:hover{
     background-color: #ffff00;
