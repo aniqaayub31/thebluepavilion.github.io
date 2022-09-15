@@ -95,7 +95,7 @@
     color: black !important;
 }
 .carousel-control-next-icon, .carousel-control-prev-icon{
-    background-color: #ffff00 !important;
+    background-color: black !important;
     border-radius: 50%;
     color: white !important;
 }
@@ -181,8 +181,11 @@
 }
 .services .card{
     border: transparent;
-    box-shadow: 3px 3px 6px #0bc4f25a;
+    box-shadow: 3px 3px 15px #0bc4f25a;
     transition: 0.5s;
+}
+.services .card p{
+    text-align: justify;
 }
 .services .card img{
     width: 6rem;
