@@ -55,23 +55,10 @@
 }
 .carousel-caption h1{
    font-family: 'Open Sans', sans-serif;
-   color: white;
+   color: #ffff00;
    letter-spacing: -0.25rem;
    font-size: 5rem;
-   line-height: 5.2rem;
-   text-shadow: none;
-   animation-name: headingOne; 
-   animation-duration:3s;
-   animation-iteration-count: 1;
-}
-@keyframes headingOne{
-    from{
-        color: white;
-
-    }to{
-        color: #ffff00;
-        text-shadow: .1rem .1rem .2rem white;
-    }
+   line-height: 5.2rem;  
 }
 .carousel-caption h3,p{
     color: white;
@@ -115,8 +102,9 @@
     /* width: 70vw; */
     margin: auto;
     border: transparent;
-    box-shadow: .1rem .1rem .8rem #0bc4f272; 
+    box-shadow: none; 
     padding: 1rem; 
+    box-shadow: .1rem .1rem .8rem #0bc4f272; ;
 }
 .about .card h1{
     font-family: 'Open Sans', sans-serif;
@@ -182,7 +170,6 @@
 .services .card{
     border: transparent;
     box-shadow: 3px 3px 15px #0bc4f25a;
-    transition: 0.5s;
 }
 .services .card p{
     text-align: justify;
@@ -197,9 +184,7 @@
     padding-top:1rem;
 }
 .services .card:hover{
-    border-left: 2px solid #0bc4f2;
     box-shadow: 6px 6px 10px #0bc4f275;
-    transform: scale(1.1);
     z-index: 100;
 }
 .services .card .card-body .btn{
@@ -223,6 +208,9 @@
 .container .slide img{
     width: 10rem;
 }
+/* Our Product Section */
+
+
 /* our client section */
 .client-section{
     width: 100vw;
@@ -716,7 +704,9 @@
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+       html{
+        font-size: 80%;
+       }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
